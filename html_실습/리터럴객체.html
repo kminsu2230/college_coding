@@ -1,0 +1,34 @@
+<!--1번문제-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script>
+		//함수생성
+		var retal = {
+		이름:'홍길동',
+		주소:'대구시 북구',
+		학과:'컴퓨터 정보계열',
+		전공:'2학년 GCC반',
+		취미:'영상촬영',
+		장래희망:'콘텐츠 제작',
+		취업:'웹디자인 및 웹 프로그래머',
+		방학동안하고싶은일 : '자유 여행' 
+		}
+		//변수선언
+	var output="";
+	//출력반복문
+	for(var key in retal)
+	{	output+= key + ':' + retal[key] + "<br>";}
+	//출력
+	document.write(output);
+
+	</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

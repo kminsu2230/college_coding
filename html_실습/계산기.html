@@ -1,0 +1,81 @@
+<!--7번 문제-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title></title>
+
+  <script>
+  //덧셈함수 생성
+     function exam1()
+     {
+      //변수저장
+      var a=document.getElementById("one").value;
+      var b=document.getElementById("two").value;
+      //합계저장
+      var sum=Number(a)+Number(b);
+      //출력
+      document.getElementById("three").value=sum;
+     }
+  //뺄샘함수 생성
+     function exam2()
+     {
+
+      var a=document.getElementById("one").value;
+      var b=document.getElementById("two").value;
+      var sum=Number(a)-Number(b);
+    
+      document.getElementById("three").value=sum;
+
+     }
+  //곱셈함수 생성
+     function exam3()
+     {
+
+      var a=document.getElementById("one").value;
+      var b=document.getElementById("two").value;
+       var sum=Number(a)*Number(b);
+    
+    
+      document.getElementById("three").value=sum;
+
+     }
+  //나눗셈함수 생성
+     function exam4()
+     {
+
+      var a=document.getElementById("one").value;
+      var b=document.getElementById("two").value;
+      var sum=Number(a)/Number(b);
+    
+    
+      document.getElementById("three").value=sum;
+
+     }
+  //나머지함수 생성
+     function exam5()
+     {
+
+      var a=document.getElementById("one").value;
+      var b=document.getElementById("two").value;
+      var sum=Number(a)%Number(b);
+    
+    
+      document.getElementById("three").value=sum;
+
+     }
+  </script>
+</head>
+<body>
+<input type="text" id="one"/>
+<input type="text" id="two"/><br/>
+<input type="button" onclick="exam1()" value="+" />
+<input type="button" onclick="exam2()" value="-" />
+<input type="button" onclick="exam3()" value="*" />
+<input type="button" onclick="exam4()" value="/" />
+<input type="button" onclick="exam5()" value="%" /><br/>
+<input type="text" id="three" />
+
+  </body>
+  </html>

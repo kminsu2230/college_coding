@@ -1,0 +1,44 @@
+<!--4번 문제-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>자바스크립트</title>
+
+	<script>
+	//함수생성
+	function colors() {
+		
+		//불러와서 co에 저장
+		var col1= document.getElementById('num1');
+		var col2= document.getElementById('num2');
+		var col3= document.getElementById('num3');
+
+		//각 변수마다 스타일을 지정
+		col1.style.color="red";
+		col1.style.background="pink";
+		col1.style.fontface="궁서";
+
+		col2.style.color="blue";
+		col2.style.background="pink";
+		col2.style.fontfamily="고딕체";
+
+		col3.style.color="green";
+		col3.style.background="pink";
+		col3.style.fontfamily="고딕체";
+
+	}
+	 	
+
+	</script>
+</head>
+<body>
+<input type ="button" onclick="colors()" value="글씨색 변경하기" />
+<h2 id="num1">오늘은 기말고사 실기입니다.</h2>
+<h2 id="num2">다들 최선을 다해 좋은 성과를..^^</h2>
+<h2 id="num3">영진전문대학 컴정GCC반 홧팅</h2>
+
+
+</body>
+</html>

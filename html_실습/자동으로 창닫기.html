@@ -1,0 +1,41 @@
+<!--5번문제-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>자바스크립트</title>
+<script>
+//함수생성
+function up() {
+	 var back = window.open("","","width=100px,height=100px",'');//윈도우창을 100,100으로 오픈
+   var wid = screen.width;
+   var heig = screen.height;
+        //위치,사이즈
+        back.moveTo(0,0);
+        back.resizeTo(wid,heig);
+  // 윈도우 창안에 출력
+        back.document.write("<hr>");
+        back.document.write("<h2>안녕하세요.. 영진전문대학에 오신걸 환영합니다.^^*</h2>");
+        back.document.write("<hr>");
+
+        back.document.write("<h1>공지사항</h1>");
+        back.document.write("전공:GCC반"+"<p>");
+        back.document.write("오늘은 정보관에서 전공 및 콘텐츠 제작 대한 설명회가 있습니다. 많은참석 부탁드립니다."+"<br>"+"<br>");
+
+        back.document.write("- 컴퓨터정보계열 -");
+
+   //일정시간후 창의 크기가 줄어듬
+        setInterval(function () {
+    //창을닫음
+        close();
+        },1/5)
+  }
+	</script>
+</head>
+<body>
+  <form>
+  	<img src="yjs.jpg" onclick="up()">
+  </form>
+</body>
+</html>
