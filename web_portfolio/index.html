@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>My Portfolio</title>
+		<meta name="description" content="Draggable Dual-View Slideshow: A Slideshow with two views and content area" />
+		<meta name="keywords" content="draggable, slideshow, fullscreen, carousel, views, zoomed, 3d transform, perspective, dragdealer" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/dragdealer.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+  		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+			<!--메인메뉴-->
+			<header id="header" class="codrops-header">
+				<h1>3Gc-c 김민수</h1>
+				<span id= "header-span" class="message">가로가 650px 이하에는 슬라이드 쇼 스위치가 없습니다.</span>
+				<button class="slider-switch">(T_T)</button>
+			</header>
+			<!--전환 도우미 화면-->
+			<div id="overlay" class="overlay">
+				<div class="info">
+					<h1>슬라이드 방식</h1>
+					<span class="info-drag">좌  우</span>
+					<span class="info-keys">방 향 키</span>
+					<span class="info-switch">전 체 보 기</span>
+					<button>시작</button>	
+				</div>
+			</div>
+			<!--슬라이더-->
+			<div id="slideshow" class="dragslider">
+				<section class="img-dragger img-dragger-large dragdealer">
+				<!-- 드래그앤드롭 이미지전환-->
+					<div class="handle">
+						<!--1번째 이미지-->
+						<div class="slide" data-content="content-1">
+							<div class="img-wrap"><img src="img/1.png" alt="img1"/></div>
+							<!--1번째 메인문구-->
+							<div id = "slide1">
+							<h2>Portfolio<br><span>UI/UX Design</span></h2>
+							<button id = "slider-switch1" class="content-switch"><br></button>	
+							</div>
+							
+						</div>
+						<!--2번째 이미지-->
+						<div class="slide" data-content="content-2">
+							<div class="img-wrap"><img src="img/2.jpg" alt="img2"/></div>
+							<!--2번째 메인문구-->
+							<div id = "slide2">
+								<h2>My product<br><span> 수업시간 속 나의 결과물 </span></h2>
+								<button id = "slider-switch2" class="content-switch"><br></button>
+								</div>
+						</div>
+						<!--3번째 이미지-->
+						<div class="slide" data-content="content-3">
+							<div class="img-wrap"><img src="img/3.jpg" alt="img3"/><br></div>
+							<!--3번째 메인문구-->
+							<div id = "slide3">
+							<h2> Experience<br><span>경험과 할 수 있는것</span></h2>
+							<button id = "slider-switch3" class="content-switch"><br></button>
+							</div>
+						</div>
+						<!--4번째 이미지-->
+						<div class="slide" data-content="content-4">
+							<div class="img-wrap"><img src="img/4.jpg" alt="img4"/></div>
+							<!--4번째 메인문구-->
+							<div id = "slide4">
+							<h2> Activity<br><span>나의 활동</span></h2>
+							<button id = "slider-switch4" class="content-switch"><br></button>
+							</div>
+						</div>
+						<!--5번째 이미지-->
+						<div class="slide" data-content="content-5">
+							<div class="img-wrap"><img src="img/5.jpg" alt="img5"/></div>
+							<!--5번째 메인문구-->
+							<div id = "slide5">
+							<h2> License<br> <span>자격증</span></h2>
+							<button id = "slider-switch5" class="content-switch"><br></button>
+							</div>
+						</div>
+						<!--6번째 이미지-->
+						<div class="slide" data-content="content-6">
+							<div class="img-wrap"><img src="img/6.jpg" alt="img6"/></div>
+							<!--6번째 메인문구-->
+							<div id = "slide6">
+							<h2> Etc<br> <span>나의 장점</span></h2>
+							<button id = "slider-switch6" class="content-switch"><br></button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- 더보기 -->
+				<section class="pages">
+					<!--1번째 더보기-->
+					<div id="pagecontent1" class="content" data-content="content-1">
+							<h2 id = "content1"> My introduction </h2>
+							<p>
+								<img src="introduction/introduction.png"/>
+							</p>
+					</div>
+					<!--2번째 더보기-->
+					<div id="pagecontent2" class="content" data-content="content-2">
+							<h2 id = "content2">My product</h2>
+							<p>
+								<img src="product/1.png"/>
+								<img src="product/2.png"/>
+								<img src="product/3.png"/>
+								<img src="product/4.png"/>
+								<img src="product/5.png"/>
+								<img src="product/6.png"/>
+								<img src="product/7.png"/>
+								<img src="product/8.png"/>
+								<img src="product/9.png"/>
+								<img src="product/10.png"/>
+								<img src="product/11.png"/>
+								<img src="product/12.png"/>
+								<img src="product/13.png"/>
+								<img src="product/14.png"/>
+								<img src="product/15.png"/>
+								<img src="product/16.png"/>
+								<img src="product/17.png"/>
+								<img src="product/18.png"/>
+								<img src="product/19.png"/>
+								<img src="product/20.png"/>
+								<img src="product/21.png"/>
+								<img src="product/22.png"/>
+								<img src="product/23.png"/>
+								<img src="product/24.png"/>
+								<img src="product/25.png"/>
+								<img src="product/26.png"/>
+								<img src="product/27.png"/>
+								<img src="product/29.png"/>
+								<img src="product/30.png"/>
+								<img src="product/31.png"/>
+								<img src="product/32.png"/>
+								<img src="product/33.png"/>
+							</p>
+					</div>
+					<!--3번째 더보기-->
+					<div id="pagecontent3" class="content" data-content="content-3">
+							<h2 id = "content3">Experience</h2>
+							<p>
+								<img src="Experience/9.png"/>
+								<br><br><br>
+								<img src="Experience/3_2.png"/>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<img src="Experience/4_2.png"/>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<img src="Experience/5_2.png"/>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<img src="Experience/6_2.png"/>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<img src="Experience/7_2.png"/>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<img src="Experience/8_2.png"/>
+								<br>
+								<br>
+								<br>
+								<br>
+								<img src="Experience/10.png"/>
+								<br><br><br>
+								<img src="Experience/1.png"/>
+								<img src="Experience/2.png"/>
+								<img src="Experience/11.png"/>
+							</p>
+					</div>
+					<!--4번째 더보기-->
+					<div id="pagecontent4" class="content" data-content="content-4">
+							<h2 id = "content4">Activity</h2>
+							<p>
+							<img src="Activity/Activity.png"/>
+							</p>
+					</div>
+					<!--5번째 더보기-->
+					<div id="pagecontent5" class="content" data-content="content-5">
+							<h2 id = "content5">License</h2>
+							<p>
+							<img src="License/License.png"/>
+							</p>
+					</div>
+					<!--6번째 더보기-->
+					<div id="pagecontent6" class="content" data-content="content-6">
+							<h2 id = "content6">Etc </h2>
+							<p>
+							<img src="etc/etc.png"/>
+							</p>
+					</div>
+				</section>
+			</div>
+		</div><!-- /container --> 
+		<script src="js/dragdealer.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/dragslideshow.js"></script>
+		<script>
+			(function() {
+
+				var overlay = document.getElementById( 'overlay' ),
+					overlayClose = overlay.querySelector( 'button' ),
+					header = document.getElementById( 'header' )
+					switchBtnn = header.querySelector( 'button.slider-switch' ),
+					toggleBtnn = function() {
+						if( slideshow.isFullscreen ) {
+							classie.add( switchBtnn, 'view-maxi' );
+						}
+						else {
+							classie.remove( switchBtnn, 'view-maxi' );
+						}
+					},
+					toggleCtrls = function() {
+						if( !slideshow.isContent ) {
+							classie.add( header, 'hide' );
+						}
+					},
+					toggleCompleteCtrls = function() {
+						if( !slideshow.isContent ) {
+							classie.remove( header, 'hide' );
+						}
+					},
+					slideshow = new DragSlideshow( document.getElementById( 'slideshow' ), { 
+						// 전체 화면과 최소화 된 슬라이드 쇼 간 전환
+						onToggle : toggleBtnn,
+						// 주 이미지와 콘텐츠보기를 토글합니다.
+						onToggleContent : toggleCtrls,
+						// 주 이미지와 내용보기를 전환합니다 (애니메이션이 끝난 후 트리거 됨).
+						onToggleContentComplete : toggleCompleteCtrls
+					}),
+					toggleSlideshow = function() {
+						slideshow.toggle();
+						toggleBtnn();
+					},
+					closeOverlay = function() {
+						classie.add( overlay, 'hide' );
+					};
+
+				// 전체 화면과 작은 슬라이드 쇼 간 전환
+				switchBtnn.addEventListener( 'click', toggleSlideshow );
+				// 오버레이 닫기
+				overlayClose.addEventListener( 'click', closeOverlay );
+
+			}());
+		</script>
+	</body>
+</html>
